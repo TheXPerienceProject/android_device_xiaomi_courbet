@@ -36,4 +36,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.courbet.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.courbet.rc
 
-include vendor/xiaomi/sweet/courbet-vendor.mk
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.courbet
+
+include vendor/xiaomi/courbet/courbet-vendor.mk
