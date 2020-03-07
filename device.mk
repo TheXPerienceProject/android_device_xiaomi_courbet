@@ -91,9 +91,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-nci.conf
 
-# Perf
+# Power
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.0
+    android.hardware.power-service.courbet-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/powerhint.json
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -130,4 +133,3 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 include vendor/xiaomi/courbet/courbet-vendor.mk
-
