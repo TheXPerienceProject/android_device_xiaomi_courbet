@@ -1,3 +1,7 @@
 # Allow init to bind mount over vendor file
 allow init vendor_file:file mounton;
 allow init vendor_configs_file:file mounton;
+
+# DC Dimming
+allow init sysfs_dm:file setattr;
+
