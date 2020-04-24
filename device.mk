@@ -67,6 +67,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+<<<<<<< HEAD
 # Overlays--from--Vendor
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
@@ -75,6 +76,10 @@ PRODUCT_PACKAGES += \
 
 # Properties
 -include $(LOCAL_PATH)/product_prop.mk
+
+# rro_overlays
+PRODUCT_PACKAGES += \
+    WifiOverlay
 
 # VINTF
 PRODUCT_COPY_FILES += \
