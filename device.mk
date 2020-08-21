@@ -80,6 +80,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # rro_overlays
 PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
     WifiOverlay
 
 # Perf
