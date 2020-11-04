@@ -44,3 +44,6 @@ on post-fs-data
     write /proc/sys/kernel/sched_downmigrate 85
 
 setprop vendor.powerhal.init 1
+
+    # Disable serial console
+    setprop init.svc.console stopped
