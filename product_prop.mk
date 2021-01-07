@@ -1,3 +1,7 @@
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.disableabsvol=true
+
 # Dynamic RR
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
@@ -22,3 +26,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.media_vol_steps=15 \
 	ro.config.vc_call_vol_default=7 \
 	ro.config.vc_call_vol_steps=11
+
