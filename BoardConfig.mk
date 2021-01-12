@@ -43,6 +43,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CONFIG := courbet_user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/courbet
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
