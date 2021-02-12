@@ -67,7 +67,6 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-<<<<<<< HEAD
 # Overlays--from--Vendor
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
