@@ -15,8 +15,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Fastbootd
-PRODUCT_PACKAGES += \
+# Fastboot PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.0-impl-mock
 
@@ -39,5 +38,9 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.courbet
+
+# VINTF
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/vintf/android.hardware.lights-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/android.hardware.lights-qti.xml
 
 include vendor/xiaomi/courbet/courbet-vendor.mk
