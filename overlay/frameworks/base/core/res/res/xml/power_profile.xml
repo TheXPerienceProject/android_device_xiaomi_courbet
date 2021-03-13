@@ -8,8 +8,8 @@
     <item name="wifi.on">0.5</item>
     <item name="wifi.active">135.59</item>
     <item name="wifi.scan">19.46</item>
-    <item name="audio">20.71</item>
-    <item name="video">40.63</item>
+    <item name="dsp.audio">20.71</item>
+    <item name="dsp.video">40.63</item>
     <item name="camera.flashlight">288.29</item>
     <item name="camera.avg">770.28</item>
     <item name="gps.on">59.39</item>
@@ -33,7 +33,7 @@
         <value>768000</value>
         <value>1017600</value>
         <value>1248000</value>
-        <value>1324800</value>
+        <value>13248000</value>
         <value>1497600</value>
         <value>1621800</value>
         <value>1708800</value>
@@ -65,7 +65,6 @@
         <value>1939200</value>
         <value>2169600</value>
         <value>2208000</value>
-        <value>2304000</value>
     </array>
     <array name="cpu.core_power.cluster1">
         <value>199.52</value>
@@ -79,13 +78,12 @@
         <value>813.09</value>
         <value>1140.65</value>
         <value>1242.73</value>
-        <value>1314.4</value>
-        <value>1483.92</value>
-        <value>1513.32</value>
+        <value>1514.4</value>
+        <value>1583.92</value>
     </array>
-    <item name="cpu.idle">7.44</item>
-    <item name="cpu.suspend">4.48</item>
-    <item name="battery.capacity">5020</item>
+    <item name="cpu.awake">7.44</item>
+    <item name="cpu.idle">4.48</item>
+    <item name="battery.capacity">4250</item>
     <item name="wifi.controller.idle">0</item>
     <item name="wifi.controller.rx">0</item>
     <item name="wifi.controller.tx">0</item>
