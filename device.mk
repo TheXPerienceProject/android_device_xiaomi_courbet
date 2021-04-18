@@ -82,6 +82,10 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_PACKAGES += \
     WifiOverlay
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.0
+
 # Releasetool scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/device_nfc_check.sh:install/bin/device_nfc_check.sh
