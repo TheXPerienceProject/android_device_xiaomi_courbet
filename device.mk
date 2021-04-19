@@ -15,13 +15,21 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Fastboot PRODUCT_PACKAGES += \
+# Fastboot 
+PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.0-impl-mock
 
 # File systems table
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
+
+# Device Settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
