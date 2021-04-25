@@ -5,3 +5,10 @@ persist.sensor.                u:object_r:sensors_prop:s0
 persist.camera.                u:object_r:vendor_camera_prop:s0
 persist.nfc.                   u:object_r:nfc_prop:s0
 vendor.camera.                 u:object_r:vendor_camera_prop:s0
+
+# Power
+vendor.powerhal.state      u:object_r:power_prop:s0
+vendor.powerhal.audio      u:object_r:power_prop:s0
+vendor.powerhal.lpm        u:object_r:power_prop:s0
+vendor.powerhal.init       u:object_r:power_prop:s0
+vendor.powerhal.rendering  u:object_r:power_prop:s0
