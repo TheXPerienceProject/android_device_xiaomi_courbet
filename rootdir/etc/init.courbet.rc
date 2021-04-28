@@ -37,3 +37,9 @@ on property:init.svc.tcpdump=running
 
 on property:init.svc.vendor.ipacm-diag=running
     stop vendor.ipacm-diag
+
+on post-fs-data
+    # EAS
+    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_downmigrate 85
+
