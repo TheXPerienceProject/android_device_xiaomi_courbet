@@ -23,8 +23,6 @@ import android.content.pm.PackageManager;
 import android.hardware.display.AmbientDisplayConfiguration;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
-import android.os.PowerManager;
-import android.os.SystemClock;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
@@ -41,7 +39,7 @@ public final class DozeUtils {
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
     protected static final String ALWAYS_ON_DISPLAY = "always_on_display";
-    protected static final String WAKE_ON_GESTURE_KEY = "wake_on_gesture";
+
     protected static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
 
@@ -70,31 +68,30 @@ public final class DozeUtils {
     }
 
     protected static boolean getProxCheckBeforePulse(Context context) {
-        // Disable proximity support in our Doze service
-        // TODO: Figure out why this doesn't work.
-        return false;
+        try {
+            Context con = context.createPackageContext("com.android.systemui", 0);
+            int id = con.getResources().getIdentifier("doze_proximity_check_before_pulse",
+                    "bool", "com.android.systemui");
+            return con.getResources().getBoolean(id);
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
     }
 
-    public static boolean enableDoze(Context context, boolean enable) {
+    protected static boolean enableDoze(Context context, boolean enable) {
         return Settings.Secure.putInt(context.getContentResolver(),
                 DOZE_ENABLED, enable ? 1 : 0);
     }
 
     public static boolean isDozeEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
-                DOZE_ENABLED, 0) != 0;
+                DOZE_ENABLED, 1) != 0;
     }
 
-    protected static void wakeOrLaunchDozePulse(Context context) {
-        if (isWakeOnGestureEnabled(context)) {
-            if (DEBUG) Log.d(TAG, "Wake up display");
-            PowerManager powerManager = context.getSystemService(PowerManager.class);
-            powerManager.wakeUp(SystemClock.uptimeMillis(), PowerManager.WAKE_REASON_GESTURE, TAG);
-        } else {
+    protected static void launchDozePulse(Context context) {
         if (DEBUG) Log.d(TAG, "Launch doze pulse");
         context.sendBroadcastAsUser(new Intent(DOZE_INTENT),
                 new UserHandle(UserHandle.USER_CURRENT));
-        }
     }
 
     protected static boolean enableAlwaysOn(Context context, boolean enable) {
@@ -118,10 +115,6 @@ public final class DozeUtils {
     protected static boolean isGestureEnabled(Context context, String gesture) {
         return PreferenceManager.getDefaultSharedPreferences(context)
                 .getBoolean(gesture, false);
-    }
-
-    protected static boolean isWakeOnGestureEnabled(Context context) {
-        return isGestureEnabled(context, WAKE_ON_GESTURE_KEY);
     }
 
     protected static boolean isPickUpEnabled(Context context) {
