@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The PixelExperience Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common PixelExperience stuff
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common XPerience stuff.
+$(call inherit-product, vendor/xperience/config/common.mk)
+
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_courbet
+PRODUCT_NAME := xperience_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Mi
 PRODUCT_MODEL := Mi 11 Lite
