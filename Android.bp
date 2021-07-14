@@ -12,12 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_library_shared {
-    name: "android.hidl.base@1.0",
-
-}
-
-cc_library_shared {
-    name: "android.hidl.manager@1.0",
+soong_namespace {
 
 }
