@@ -16,6 +16,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+PRODUCT_TARGET_VNDK_VERSION := 30
+
 # AAPT
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
