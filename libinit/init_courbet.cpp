@@ -127,8 +127,8 @@ void load_dalvik_properties() {
 
 void vendor_load_properties() {
 //   SafetyNet workaround
-    char const fp[] = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
-    char const fp_desc[] = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+    char const fp[] = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
+    char const fp_desc[] = "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys";
 
     string region = android::base::GetProperty("ro.boot.hwc", "");
 
