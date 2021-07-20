@@ -44,6 +44,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml
 
+#Display Set display color mode to Adaptive by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.sf.color_saturation=1.0 \
+    persist.sys.sf.native_mode=2 \
+    persist.sys.sf.color_mode=9
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
