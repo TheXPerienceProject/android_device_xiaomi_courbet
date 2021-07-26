@@ -250,7 +250,7 @@
     <integer name="config_screenRecorderMaxFramerate">90</integer>
 
     <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">true</bool>
+    <bool name="config_supportDoubleTapWake">false</bool>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
         percent. The length of this array is assumed to be one greater than
