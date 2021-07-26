@@ -67,6 +67,12 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Overlays--from--Vendor
+PRODUCT_PACKAGES += \
+    FrameworksResTarget \
+    DevicesOverlay \
+    DevicesAndroidOverlay
+
 # Properties
 -include $(LOCAL_PATH)/product_prop.mk
 
