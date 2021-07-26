@@ -664,4 +664,8 @@
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">false</bool>
 
+    <string name="config_mainBuiltInDisplayCutout">
+	M 0,0 H 144 V 104 H 0 V 0 Z 
+    </string>
+
 </resources>
