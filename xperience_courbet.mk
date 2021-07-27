@@ -10,9 +10,6 @@ $(call inherit-product, device/xiaomi/courbet/device.mk)
 # Inherit some common XPerience stuff.
 $(call inherit-product, vendor/xperience/config/common.mk)
 
-# GApps
-$(call inherit-product, vendor/gapps/pixel-gapps.mk)
-
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
