@@ -27,6 +27,10 @@ system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Perf
+system_ext/lib64/vendor.qti.hardware.iop@2.0.so
+system_ext/lib/vendor.qti.hardware.iop@2.0.so
+
 # Radio
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
