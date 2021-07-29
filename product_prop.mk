@@ -15,3 +15,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	debug.sf.disable_backpressure=1 \
 	debug.sf.enable_hwc_vds=1 \
 	debug.sf.latch_unsignaled=1
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.config.media_vol_default=10 \
+	ro.config.media_vol_steps=15 \
+	ro.config.vc_call_vol_default=7 \
+	ro.config.vc_call_vol_steps=11
