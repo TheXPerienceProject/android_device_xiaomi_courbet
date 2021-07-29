@@ -75,6 +75,8 @@ PRODUCT_PACKAGES += \
 
 # Properties
 -include $(LOCAL_PATH)/product_prop.mk
+-include $(LOCAL_PATH)/system_prop.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # rro_overlays
 PRODUCT_PACKAGES += \
