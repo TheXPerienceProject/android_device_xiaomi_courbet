@@ -47,7 +47,7 @@ public class RefreshRateTileService extends TileService {
     }
 
     private void updateTileState() {
-        if (currentRefreshRate == 1) {
+        if (currentRefreshRate == 0) {
             getQsTile().setState(Tile.STATE_ACTIVE);
         } else {
             getQsTile().setState(Tile.STATE_INACTIVE);
@@ -71,10 +71,10 @@ public class RefreshRateTileService extends TileService {
     public void onClick() {
         super.onClick();
         updateCurrentRefreshRate();
-        if (currentRefreshRate == 1) {
-            currentRefreshRate = 0;
-        } else {
+        if (currentRefreshRate == 0) {
             currentRefreshRate = 1;
+        } else {
+            currentRefreshRate = 0;
         }
         RefreshRateUtils.setRefreshRate(context, getRefreshRateVal());
         RefreshRateUtils.setFPS(getRefreshRateVal());
