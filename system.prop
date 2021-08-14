@@ -1,3 +1,6 @@
+# DPI
+ro.sf.lcd_density=392
+
 # VoLTE
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
