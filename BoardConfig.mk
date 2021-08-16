@@ -20,6 +20,9 @@ TARGET_OTA_ASSERT_DEVICE := courbet,courbetin
 TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom \
                         androidboot.memcg=1 \
