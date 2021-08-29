@@ -427,4 +427,7 @@
         <item>10</item>
         <item>10</item>
     </integer-array>
+
+    <!-- Whether device has ChargeTurbo charging support all xiaomis for example -->
+    <bool name="config_hasChargeTurbo">true</bool>
 </resources>
