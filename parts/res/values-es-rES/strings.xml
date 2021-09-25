@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="device_specific_settings_title">Configuraciones específicas del dispositivo</string>
+    <string name="device_specific_settings_summary">Configuracion de Taza de Refresco</string>
+    <string name="device_min_refresh_rate">Minima Taza de Refresco</string>
+    <string name="refresh_rate_tile_title">Maxima Taza de Refresco</string>
+    
+    <!-- Dirac settings -->
+    <string name="dirac_title">Potenciador de sonido Dirac</string>
+    <string name="dirac_headset_title">Tipo de auricular</string>
+    <string name="dirac_hifi_enable_title">Habilitar Hi-Fi</string>
+    <string name="dirac_preset_title">Preajuste de sonido</string>
+
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Disminuye el ruido y la distorsión y aumenta la calidad del audio</string>
+
+    <string name="dirac_headset_default">Predefinido</string>
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston 1</string>
+    <string name="dirac_headset_general">Normales</string>
+    <string name="dirac_headset_general_inear">Normales In-Ear</string>
+    <string name="dirac_headset_piston_basic">Edición Básica</string>
+    <string name="dirac_headset_piston_2">Mi Piston 2</string>
+    <string name="dirac_headset_piston_standard">Edición Estándar</string>
+    <string name="dirac_headset_headphone">Mi Headphone</string>
+    <string name="dirac_headset_piston_youth">Edición joven</string>
+    <string name="dirac_headset_piston_color">Edición a color</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Cancelación de ruido Mi(Type-C)</string>
+    <string name="dirac_headset_cancelling">Cancelación de ruido Mi(3.5mm)</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+
+    <string name="dirac_preset_default">Predefinido</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Clásico</string>
+    <string name="dirac_preset_hiphop">Hiphop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Electrónica</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Bajos potenciados</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Perfiles Térmicos</string>
+    <string name="thermal_summary">Ajusta los perfiles térmicos por aplicación para obtener el óptimo rendimiento</string>
+    <string name="thermal_default">Predefinido</string>
+    <string name="thermal_benchmark">Benchmark</string>
+    <string name="thermal_browser">Navegación</string>
+    <string name="thermal_camera">Camera</string>
+    <string name="thermal_dialer">Llamada</string>
+    <string name="thermal_gaming">Juego</string>
+    <string name="thermal_youtube">Streaming</string>
+
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Control tactil</string>
+    <string name="touch_game_mode_title">Habilitar el modo de juego</string>
+    <string name="touch_game_mode_summary">Active los controles de función de la pantalla táctil manual para una mejor experiencia de juego</string>
+    <string name="touch_response_title">Respuesta al tacto</string>
+    <string name="touch_response_summary">Control de respuesta táctil</string>
+    <string name="touch_sensitivity_title">Sensibilidad al tacto</string>
+    <string name="touch_sensitivity_summary">Controle la sensibilidad táctil para toques repetidos</string>
+    <string name="touch_resistant_title">Área resistente al tacto</string>
+    <string name="touch_resistant_summary">Reduzca la sensibilidad táctil cerca de los bordes para evitar activar los controles táctiles</string>
+
+    <!--  DT2W    -->
+    <string name="dt2w_enable_title">Doble Toque para Despertar</string>
+    <string name="dt2w_enable_summary">Doble Toque en la pantalla de bloqueo para Despertar</string>
+</resources>
