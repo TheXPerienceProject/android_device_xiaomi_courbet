@@ -25,12 +25,4 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">104.0px</dimen>
 
-    <!-- Notch dimens. -->
-    <dimen name="notch_height">104.0px</dimen>
-    <dimen name="notch_hole_type_status_bar_padding_top">36.0px</dimen>
-    <dimen name="notch_width">144.0px</dimen>
-    <dimen name="round_cornor_padding">0.0px</dimen>
-    <dimen name="statusbar_hole_type_padding_left">144.0px</dimen>
-    <dimen name="statusbar_hole_type_padding_right">47.0px</dimen>
-
 </resources>
