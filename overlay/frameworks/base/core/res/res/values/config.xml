@@ -292,7 +292,7 @@
         <item>600</item>
         <item>1000</item>
     </integer-array>
-mainBuiltInDisplayCutout from stock
+
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
         percent. The length of this array is assumed to be one greater than
         config_ambientThresholdLevels. The darkening threshold is calculated as
