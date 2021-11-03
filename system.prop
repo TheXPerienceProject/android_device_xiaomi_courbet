@@ -1,5 +1,5 @@
 # DPI
-ro.sf.lcd_density=392
+ro.sf.lcd_density=440
 
 # VoLTE
 persist.dbg.volte_avail_ovr=1
