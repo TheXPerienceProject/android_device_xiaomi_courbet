@@ -103,14 +103,6 @@
 
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles">
-        <item>/system/framework/arm64/boot.oat</item>
-        <item>/system/framework/arm/boot.oat</item>
-        <item>/system/framework/oat/arm64/services.odex</item>
-        <item>/system/framework/oat/arm/services.odex</item>
-        <item>/system/framework/arm64/boot-framework.oat</item>
-        <item>/system/framework/arm/boot-framework.oat</item>
-        <item>/system/framework/arm64/boot-core-libart.oat</item>
-        <item>/system/framework/arm/boot-core-libart.oat</item>
         <item>/system/lib64/libRScpp.so</item>
         <item>/system/lib64/libRS.so</item>
         <item>/system/lib64/libRS_internal.so</item>
