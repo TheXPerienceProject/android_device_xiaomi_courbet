@@ -18,7 +18,7 @@ cc_binary {
     relative_install_path: "hw",
     init_rc: ["android.hardware.power-service.courbet-libperfmgr.rc"],
     shared_libs: [
-        "android.hardware.power-ndk_platform",
+        "android.hardware.power-V1-ndk_platform",
         "libbase",
         "libcutils",
         "liblog",
