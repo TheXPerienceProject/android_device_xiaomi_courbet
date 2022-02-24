@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/plus_sweet.mk
+    $(LOCAL_DIR)/xperience_courbet.mk
 
 COMMON_LUNCH_CHOICES := \
-    plus_sweet-user \
-    plus_sweet-userdebug \
-    plus_sweet-eng
+    xperience_courbet-user \
+    xperience_courbet-userdebug \
+    xperience_courbet-eng
