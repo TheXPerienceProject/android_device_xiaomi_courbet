@@ -116,6 +116,9 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := false
