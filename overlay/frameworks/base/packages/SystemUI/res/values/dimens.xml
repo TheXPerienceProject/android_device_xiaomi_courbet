@@ -17,11 +17,6 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- The padding on the side of the navigation bar. Must be greater than or equal to
-         navigation_extra_key_width -->
-    <dimen name="navigation_side_padding">85.0dip</dimen>
-    <dimen name="rounded_corner_content_padding">10dp</dimen>
-
     <!--  Location on the screen of the center of the physical power button. This is a reasonable
     default that should be overridden by device-specific overlays.  -->
     <dimen name="physical_power_button_center_screen_location_y">1100px</dimen>
@@ -31,4 +26,9 @@
     For devices with sensors on the back of the device, this corresponds to the location on the
     screen directly in front of the sensor.  -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1100px</dimen>
+    
+    <!-- Rounded mask sizes. -->
+    <dimen name="config_rounded_mask_size">146px</dimen>
+    <dimen name="config_rounded_mask_size_top">146px</dimen>
+    <dimen name="config_rounded_mask_size_bottom">146px</dimen>
 </resources> 
