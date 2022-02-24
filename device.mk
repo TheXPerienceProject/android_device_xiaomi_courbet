@@ -49,8 +49,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
-    CutoutRingServiceSweet
+    Snap 
 
 # Device Settings
 PRODUCT_PACKAGES += \
@@ -96,15 +95,12 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-plus
+    $(LOCAL_PATH)/overlay 
 
 # rro_overlays
 PRODUCT_PACKAGES += \
     WifiOverlay \
-    SettingsOverlayRR \
-    SweetinproSettingsProvider \
-    SweetinproWifiOverlay
+    SettingsOverlayRR 
 
 # Overlays -- Override vendor ones
 PRODUCT_PACKAGES += \
