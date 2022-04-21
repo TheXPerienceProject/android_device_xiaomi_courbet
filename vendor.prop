@@ -7,6 +7,7 @@ persist.vendor.audio.voicecall.speaker.stereo=true
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
 
+# Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Display
