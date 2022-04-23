@@ -10,6 +10,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
+# Disable remote keyguard animation
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.enable_remote_keyguard_animation=0
+
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
 
