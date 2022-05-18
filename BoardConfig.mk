@@ -35,6 +35,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_courbet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
 
 # Kernel
+TARGET_KERNEL_SOURCE := kernel/xiaomi/courbet
 TARGET_KERNEL_CONFIG := courbet_defconfig
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
