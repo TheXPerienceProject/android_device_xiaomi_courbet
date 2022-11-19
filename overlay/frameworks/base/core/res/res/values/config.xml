@@ -21,11 +21,6 @@
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
 
-    <!-- Control whether the always on display mode is available. This should only be enabled on
-         devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
-         states. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
-
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
@@ -259,9 +254,17 @@
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
     </integer-array>
 
+
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
+
+    <!-- If true, the doze component is not started until after the screen has been
+         turned off and the screen off animation has been performed. -->
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+
+    <!-- Enable doze alwaysOn Display -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
@@ -302,6 +305,7 @@
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
         <item>2</item>
+        <item>3</item>
         <item>4</item>
         <item>6</item>
         <item>8</item>
@@ -422,9 +426,10 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>4.5</item>
+        <item>5.0</item>
         <item>6.6</item>
         <item>8.0</item>
-        <item>20.0</item>
+        <item>18.0</item>
         <item>24.3</item>
         <item>29.7</item>
         <item>34.0</item>
@@ -546,8 +551,8 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-        <item>4.5</item>   <!-- index 1 -->
-        <item>1000.0</item>  <!-- index 2 -->
+        <item>3.0</item>   <!-- index 1 -->
+        <item>800.0</item>  <!-- index 2 -->
     </array>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
