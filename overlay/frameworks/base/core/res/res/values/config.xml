@@ -711,7 +711,7 @@
 
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">6</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">6</integer>
    
     <!-- The list of package IDs that are allowed to use aux cameras.
          NOTE: If this list is empty then all apps will be able to use aux cameras. -->
